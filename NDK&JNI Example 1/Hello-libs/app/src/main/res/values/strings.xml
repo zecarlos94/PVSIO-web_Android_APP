@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">hello-libs</string>
+    <string name="native_btn">Native</string>
+</resources>

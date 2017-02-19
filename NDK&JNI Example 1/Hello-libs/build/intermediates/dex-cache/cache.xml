@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_43d24dd24bbc97c47b68de7bb2fa0b717b0a96f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_680ec73df94b2db2f7ac72e9b72770e486ca7e6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_33e4693c9dd5da080330d81a3a25176d0060af28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_b8af48c8c2865d41c282bb3ea70d0ac8a606a5ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_03204ed45e50f6bc86ac367a922221fd7cf5a299.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_4476e530adc52a7c2ede28628ca62fc7246a3276.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha7/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="541a2ad68dc68aa49795821f8280b7624e6a0c9b">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.0-alpha7_6b012c60c440c57f9dd7e64ff062d7694d4a5a11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zecarlos/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha7/constraint-layout-solver-1.0.0-alpha7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="439eeb5ffd54cbd18db0a6aea471e8356f19fc36">
+        <dex dex="/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-alpha7_6ac1c33503dfd63b2c21cdc525b0aa70fe44e752.jar" />
+    </item>
+
+</items>
