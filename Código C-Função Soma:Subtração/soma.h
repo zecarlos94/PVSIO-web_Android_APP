@@ -1,0 +1,2 @@
+void subtracao();
+void soma();
