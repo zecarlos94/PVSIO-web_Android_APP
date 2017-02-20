@@ -1,5 +1,0 @@
-# ninja log v5
-0	138	0	CMakeFiles/hello-libs.dir/hello-libs.cpp.o	37c212938b7fe810
-138	179	0	/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libhello-libs.so	216ac5964dce4553
-1	107	0	CMakeFiles/hello-libs.dir/hello-libs.cpp.o	37c212938b7fe810
-107	149	0	/Users/zecarlos/AndroidStudioProjects/Hello-libs/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libhello-libs.so	216ac5964dce4553
