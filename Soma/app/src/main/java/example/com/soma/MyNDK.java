@@ -10,5 +10,6 @@ public class MyNDK {
         System.loadLibrary("MyLibrary");
     }
 
-    public native int getMyInt(int a);
+    public native float addMyFloat(float a);
+    public native float subMyFloat(float a);
 }

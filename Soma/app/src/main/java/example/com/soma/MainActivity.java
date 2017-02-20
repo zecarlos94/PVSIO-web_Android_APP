@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int i=0;
+    float i=0.0f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,23 @@ public class MainActivity extends AppCompatActivity {
         final Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                i=myNDK.getMyInt(i);
+                i=myNDK.addMyFloat(i);
                 tv.setText(i+"");
                 Log.i("SomaTag",i+"");
                 // Perform action on click
-                //i=i+1;
+                //i=i+1.0f;
+                //tv.setText("Hello There!! - #"+i);
+            }
+        });
+
+        final Button button2 = (Button) findViewById(R.id.button3);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                i=myNDK.subMyFloat(i);
+                tv.setText(i+"");
+                Log.i("SomaTag",i+"");
+                // Perform action on click
+                //i=i-1.0f;
                 //tv.setText("Hello There!! - #"+i);
             }
         });

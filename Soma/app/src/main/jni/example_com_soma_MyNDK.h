@@ -9,11 +9,19 @@ extern "C" {
 #endif
 /*
  * Class:     example_com_soma_MyNDK
- * Method:    getMyInt
- * Signature: (I)I
+ * Method:    addMyFloat
+ * Signature: (F)F
  */
-JNIEXPORT jint JNICALL Java_example_com_soma_MyNDK_getMyInt
-  (JNIEnv *, jobject, jint);
+JNIEXPORT jfloat JNICALL Java_example_com_soma_MyNDK_addMyFloat
+  (JNIEnv *, jobject, jfloat);
+
+/*
+ * Class:     example_com_soma_MyNDK
+ * Method:    subMyFloat
+ * Signature: (F)F
+ */
+JNIEXPORT jfloat JNICALL Java_example_com_soma_MyNDK_subMyFloat
+  (JNIEnv *, jobject, jfloat);
 
 #ifdef __cplusplus
 }
