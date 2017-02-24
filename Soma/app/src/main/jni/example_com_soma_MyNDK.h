@@ -21,8 +21,7 @@ JNIEXPORT jfloat JNICALL Java_example_com_soma_MyNDK_addMyFloat
  * Signature: (F)F
  */
 JNIEXPORT jfloat JNICALL Java_example_com_soma_MyNDK_subMyFloat
-  (JNIEnv *, jobject, jfloat);
-
+        (JNIEnv *, jobject, jfloat);
 #ifdef __cplusplus
 }
 #endif
