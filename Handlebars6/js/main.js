@@ -58,12 +58,7 @@ $(document).ready(function(){
   var xmlread = "<rss version='2.0'><channel><title>RSS Title</title></channel></rss>";
   readXMLFile(xmlread);
 
-  //Compile Handlebars
-  //TODO
-  //Separate this and create .handlebars(create template separately)
-  var characterTemplate = $("#character-template").html();
-  var compiledCharacterTemplate = Handlebars.compile(characterTemplate);
   //Updates html page with handlebars content
-  $(".character-list-container").html(compiledCharacterTemplate(my_JSON_object));
+  $(".character-list-container").html(Handlebars.templates['caracter-template'](my_JSON_object));
 
 });

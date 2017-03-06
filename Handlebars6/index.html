@@ -7,7 +7,7 @@
     IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0, minimum-scale=1.0">
-    <title>Handlebars Teste 5</title>
+    <title>Handlebars Teste 6</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,19 +19,7 @@
     <script src="js/libs-js/handlebars-v4.0.5.js"></script>
     <script src="js/outsourced/XMLWriter.js"></script>
     <script src="js/outsourced/FileSaver.js"></script>
+    <script src="templates/caracter-template.js"></script>
     <script src="js/main.js"></script>
-
-    <script id="character-template" type="text/x-handlebars-template">
-      {{#each characters}}
-      <li class="character">
-        <img src="images/{{shortCode}}.jpeg">
-        <h2>{{name}}</h2>
-        <p>Actor: {{actor}}</p>
-        <p>Location:{{#if location}} {{location}} {{else}} unknown {{/if}}</p>
-        {{#unless location}}<p>Whereabouts are unknown....</p>{{/unless}}
-      </li>
-      {{/each}}
-    </script>
-
   </body>
 </html>

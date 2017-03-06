@@ -1,0 +1,9 @@
+{{#each characters}}
+<li class="character">
+  <img src="images/{{shortCode}}.jpeg">
+  <h2>{{name}}</h2>
+  <p>Actor: {{actor}}</p>
+  <p>Location:{{#if location}} {{location}} {{else}} unknown {{/if}}</p>
+  {{#unless location}}<p>Whereabouts are unknown....</p>{{/unless}}
+</li>
+{{/each}}
