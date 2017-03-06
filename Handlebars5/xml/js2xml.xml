@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="true" ?>
+<item character="characterJSON" Name="CharacterName">
+	BEGIN
+	<character>Google 1</character>
+	<character>Google 2</character>
+	<character>Google 3</character>
+	<character>Google 4</character>
+	<character>Google 5</character>
+	<character>Google 6</character>
+</item>

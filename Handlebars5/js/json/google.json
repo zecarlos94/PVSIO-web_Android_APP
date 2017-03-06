@@ -1,0 +1,40 @@
+{
+  "characters":[
+    {
+      "name": "Google 1",
+      "shortCode": "google1",
+      "actor": "Zé",
+      "location": "UM Computer"
+    },
+    {
+      "name": "Google 2",
+      "shortCode": "google2",
+      "actor": "André",
+      "location": "Home Computer"
+    },
+    {
+      "name": "Google 3",
+      "shortCode": "google3",
+      "actor": "Bruno",
+      "location": null
+    },
+    {
+      "name": "Google 4",
+      "shortCode": "google4",
+      "actor": "André",
+      "location": ""
+    },
+    {
+      "name": "Google 5",
+      "shortCode": "google5",
+      "actor": "Zé",
+      "location": false
+    },
+    {
+      "name": "Google 6",
+      "shortCode": "google6",
+      "actor": "Bruno",
+      "location": "Personal Computer"
+    }
+  ]
+}
