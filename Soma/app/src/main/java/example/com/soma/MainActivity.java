@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.math.BigDecimal;
@@ -33,21 +34,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final MyNDK myNDK = new MyNDK();
+        final ImageView iv = (ImageView) findViewById(R.id.imageView);
         final TextView tv = (TextView) findViewById(R.id.textView);
-        tv.setTranslationX(0.15f*scrWidth);
-        tv.setTranslationY(0.18f*scrHeight);
-        //tv.setText("Hello There!! - #"+i);
 
+        //tv.setTranslationX(0.15f*scrWidth);
+        //tv.setTranslationY(0.18f*scrHeight);
+        //tv.setText("Hello There!! - #"+i);
+        tv.setText("" + iv.getScaleX()+"+"+iv.getWidth());
         final Button button = (Button) findViewById(R.id.button);
         //button.setBackgroundColor(Color.TRANSPARENT);
-        button.setTranslationX(0.225f*scrWidth);
-        button.setTranslationY(0.459f*scrHeight);
+        //button.setTranslationX(0.225f*scrWidth);
+        //button.setTranslationY(0.459f*scrHeight);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 i=myNDK.addMyFloat(i);
                 BigDecimal result;
                 result=round(i,2);
-                tv.setText(result+"");
+                tv.setText(result+"+"+iv.getWidth());
                 Log.i("SomaTag",i+"");
                 // Perform action on click
                 //i=i+1.0f;
@@ -56,16 +59,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final Button button2 = (Button) findViewById(R.id.button2);
+        button2.setVisibility(View.INVISIBLE);
         //button2.setBackgroundColor(Color.TRANSPARENT);
-        button2.setTranslationX(0.37f*scrWidth);
-        button2.setTranslationY(0.459f*scrHeight);
+        //button2.setTranslationX(0.37f*scrWidth);
+        //button2.setTranslationY(0.459f*scrHeight);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 i=myNDK.subMyFloat(i);
                 BigDecimal result;
                 result=round(i,2);
-                tv.setText(result+"");
+                tv.setText(result+"+"+iv.getHeight());
                 Log.i("SomaTag",i+"");
+
                 // Perform action on click
                 //i=i-1.0f;
                 //tv.setText("Hello There!! - #"+i);
@@ -74,24 +79,43 @@ public class MainActivity extends AppCompatActivity {
 
         final Button button3 = (Button) findViewById(R.id.button3);
         //button2.setBackgroundColor(Color.TRANSPARENT);
-        button3.setTranslationX(0.15f*scrWidth);
-        button3.setTranslationY(0.532f*scrHeight);
+        //button3.setTranslationX(0.15f*scrWidth);
+        //button3.setTranslationY(0.532f*scrHeight);
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-              if (power == 0){
-                tv.setVisibility(View.VISIBLE);
-                i=0.0f;
-                BigDecimal result;
-                result=round(i,2);
-                tv.setText(result+"");
-                Log.i("SomaTag",i+"");
-                power=1;
-              }
-              else {
-                power=0;
-                  tv.setVisibility(View.INVISIBLE);
+                if (power == 0){
+                    tv.setVisibility(View.VISIBLE);
+                    i=0.0f;
+                    BigDecimal result;
+                    result=round(i,2);
+                    tv.setText(result+"");
+                    Log.i("SomaTag",i+"");
+                    power=1;
+                }
+                else {
+                    power=0;
+                    tv.setVisibility(View.INVISIBLE);
 
-              }
+                }
+            }
+        });
+
+
+        final Button button4 = (Button) findViewById(R.id.button4);
+        //button2.setBackgroundColor(Color.TRANSPARENT);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                tv.setTranslationX(0.15f*iv.getWidth());
+                tv.setTranslationY(0.21f*iv.getHeight());
+                tv.setVisibility(View.VISIBLE);
+                button.setTranslationX(0.225f*iv.getWidth());
+                button.setTranslationY(0.525f*iv.getHeight());
+                button.setVisibility(View.VISIBLE);
+                button2.setTranslationX(0.355f*iv.getWidth());
+                button2.setTranslationY(0.525f*iv.getHeight());
+                button2.setVisibility(View.VISIBLE);
+                button3.setTranslationX(0.142f*iv.getWidth());
+                button3.setTranslationY(0.595f*iv.getHeight());
             }
         });
     }
