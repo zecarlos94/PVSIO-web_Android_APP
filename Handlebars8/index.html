@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="
+    IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, minimum-scale=1.0">
+    <title>Handlebars Teste 8</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Google Images-Different Users</h1>
+    <button id="save-btn">Save XML file</button>
+    <ul class="device-container"></ul>
+
+    <script src="js/libs-js/jquery-3.1.1.js"></script>
+    <script src="js/libs-js/handlebars-v4.0.5.js"></script>
+    <script src="js/outsourced/XMLWriter.js"></script>
+    <script src="js/outsourced/FileSaver.js"></script>
+    <script src="js/outsourced/Stuk-jszip-ab3829a/dist/jszip.js"></script>
+    <script src="js/main.js"></script>
+
+    <script id="device-template" type="text/x-handlebars-template">
+      {{#each regionDefs}}
+      <li class="character">
+        <p>{{shape}}</p>
+        <p>Coordinates: {{coords}}</p>
+      </li>
+      {{/each}}
+    </script>
+
+  </body>
+</html>
