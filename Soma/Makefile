@@ -16,8 +16,13 @@ ndk-build:
 
 apk-build:
 	@echo "Building .apk file..."
-	@./gradlew assembleRelease
-	@mv app/build/outputs/apk/app-release-unsigned.apk app-release-unsigned.apk
+	@./gradlew
+	@./gradlew assembleDebug
+	@mv app/build/outputs/apk/app-debug.apk app-debug.apk
+
+
+	#./gradlew assembleRelease
+	#mv app/build/outputs/apk/app-release-unsigned.apk app-release-unsigned.apk
 clean:
 	@echo "Limpando..."
 	
