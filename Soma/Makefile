@@ -22,9 +22,9 @@ apk-build:
 
 
 	@echo "Signing .apk file..."
-	@rm my-app.apk
-	@~/Library/Android/sdk/build-tools/*/zipalign -v -p 4 app-release-unsigned.apk  my-app.apk
-	@ ~/Library/Android/sdk/build-tools/*/apksigner sign --ks my-release-key.jks my-app.apk
+
+	@ ~/Library/Android/sdk/build-tools/25.0.2/zipalign -f -v -p 4 app-release-unsigned.apk  my-app.apk
+	@ ~/Library/Android/sdk/build-tools/25.0.2/apksigner sign --ks my-release-key.jks my-app.apk
 
 install-sdk:
 	@if [ -a sdk.zip ];then echo "File already downloaded. Please delete it to download again.";else echo "Downloading SDK...";wget -O sdk.zip "https://www.dropbox.com/s/il81vpf7e2n53rd/sdk.zip?dl=0";fi;

@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int scrWidth  = getWindowManager().getDefaultDisplay().getWidth();
-        int scrHeight = getWindowManager().getDefaultDisplay().getHeight();
+
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -37,20 +37,14 @@ public class MainActivity extends AppCompatActivity {
         final ImageView iv = (ImageView) findViewById(R.id.imageView);
         final TextView tv = (TextView) findViewById(R.id.textView);
 
-        //tv.setTranslationX(0.15f*scrWidth);
-        //tv.setTranslationY(0.18f*scrHeight);
-        //tv.setText("Hello There!! - #"+i);
-        tv.setText("" + iv.getScaleX()+"+"+iv.getWidth());
         final Button button = (Button) findViewById(R.id.button);
         //button.setBackgroundColor(Color.TRANSPARENT);
-        //button.setTranslationX(0.225f*scrWidth);
-        //button.setTranslationY(0.459f*scrHeight);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 i=myNDK.addMyFloat(i);
                 BigDecimal result;
                 result=round(i,2);
-                tv.setText(result+"+"+iv.getWidth());
+                tv.setText(result+"");
                 Log.i("SomaTag",i+"");
                 // Perform action on click
                 //i=i+1.0f;
@@ -61,14 +55,12 @@ public class MainActivity extends AppCompatActivity {
         final Button button2 = (Button) findViewById(R.id.button2);
         button2.setVisibility(View.INVISIBLE);
         //button2.setBackgroundColor(Color.TRANSPARENT);
-        //button2.setTranslationX(0.37f*scrWidth);
-        //button2.setTranslationY(0.459f*scrHeight);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 i=myNDK.subMyFloat(i);
                 BigDecimal result;
                 result=round(i,2);
-                tv.setText(result+"+"+iv.getHeight());
+                tv.setText(result+"");
                 Log.i("SomaTag",i+"");
 
                 // Perform action on click
@@ -79,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
         final Button button3 = (Button) findViewById(R.id.button3);
         //button2.setBackgroundColor(Color.TRANSPARENT);
-        //button3.setTranslationX(0.15f*scrWidth);
-        //button3.setTranslationY(0.532f*scrHeight);
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (power == 0){
@@ -101,22 +91,30 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        final Button button4 = (Button) findViewById(R.id.button4);
-        //button2.setBackgroundColor(Color.TRANSPARENT);
-        button4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                tv.setTranslationX(0.15f*iv.getWidth());
-                tv.setTranslationY(0.21f*iv.getHeight());
-                tv.setVisibility(View.VISIBLE);
+        iv.post(new Runnable() {
+            @Override
+            public void run() {
+
                 button.setTranslationX(0.225f*iv.getWidth());
-                button.setTranslationY(0.525f*iv.getHeight());
-                button.setVisibility(View.VISIBLE);
-                button2.setTranslationX(0.355f*iv.getWidth());
-                button2.setTranslationY(0.525f*iv.getHeight());
+                button.setTranslationY(0.52f*iv.getHeight());
+
+
+                tv.setTranslationX(0.18f*iv.getWidth());
+                tv.setTranslationY(0.28f*iv.getHeight());
+
+                button2.setTranslationX(0.37f*iv.getWidth());
                 button2.setVisibility(View.VISIBLE);
-                button3.setTranslationX(0.142f*iv.getWidth());
-                button3.setTranslationY(0.595f*iv.getHeight());
+                button2.setTranslationY(0.52f*iv.getHeight());
+
+                button3.setVisibility(View.VISIBLE);
+                button3.setTranslationX(0.15f*iv.getWidth());
+                button3.setTranslationY(0.6f*iv.getHeight());
+
+
             }
         });
+
+
+
     }
 }
